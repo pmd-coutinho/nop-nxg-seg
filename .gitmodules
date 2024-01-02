@@ -1,0 +1,3 @@
+[submodule "nopCommerce"]
+	path = nopCommerce
+	url = https://github.com/nopSolutions/nopCommerce.git
