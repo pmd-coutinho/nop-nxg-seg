@@ -10,4 +10,15 @@
       <ProjectReference Include="..\nopCommerce\src\Presentation\Nop.Web\Nop.Web.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Themes\" />
+    </ItemGroup>
+    
+    
+    <ItemGroup>
+        <Content Include="..\nopCommerce\src\Presentation\Nop.Web\wwwroot\**"
+                 Link="wwwroot\%(RecursiveDir)%(Filename)%(Extension)"
+                 CopyToPublishDirectory="Always" CopyToOutputDirectory="Always"/>
+    </ItemGroup>
+
 </Project>
