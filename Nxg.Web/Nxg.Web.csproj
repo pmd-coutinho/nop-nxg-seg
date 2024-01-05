@@ -28,9 +28,9 @@
         <Copy SourceFiles="@(Themes)" DestinationFolder="Themes\%(RecursiveDir)" />
     </Target>
     
-    <Target Name="CopyPlugins" BeforeTargets="Build">
+    <Target Name="CopyPlugins" AfterTargets="Build">
         <ItemGroup>
-            <Plugins Include="..\nopCommerce\src\Presentation\Nop.Web\Plugins\**\*.*" />
+            <Plugins Include="..\nopCommerce\src\Presentation\Nop.Web\Plugins\**" />
         </ItemGroup>
         <Copy SourceFiles="@(Plugins)" DestinationFolder="Plugins\%(RecursiveDir)" />
     </Target>
@@ -71,12 +71,16 @@
         <Content Update="**\*.config;**\*.json" CopyToOutputDirectory="Never" CopyToPublishDirectory="PreserveNewest" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Views\Nxg\" />
+    </ItemGroup>
+
     <!-- This target execute after "Build" target.
       We use it to clean up folder with plugins from unnecessary and obsolete libraries. -->
     <Target Name="NopTarget" AfterTargets="Build">
         <ItemGroup>
             <!-- Get plugin description files to get plugin paths -->
-            <PluginsDescription Include="$(MSBuildProjectDirectory)\..\nopCommerce\src\Plugins\**\plugin.json;" />
+            <PluginsDescription Include="$(MSBuildProjectDirectory)\Plugins\**\plugin.json;" />
             <!-- Get paths for all plugins -->
             <PluginsFolders Include="@(PluginsDescription->'%(relativedir)')" />
 
