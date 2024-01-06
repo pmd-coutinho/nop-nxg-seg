@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Widgets",
+  "FriendlyName": "Test",
+  "SystemName": "Widgets.Test",
+  "Version": "1.76",
+  "SupportedVersions": [ "4.60" ],
+  "Author": "nopCommerce team, Nicolas Muniere",
+  "DisplayOrder": 1,
+  "FileName": "Nxg.Plugin.Widgets.Test.dll",
+  "Description": "This plugin integrates with Google Analytics. It keeps track of statistics about the visitors and ecommerce conversion on your website"
+}

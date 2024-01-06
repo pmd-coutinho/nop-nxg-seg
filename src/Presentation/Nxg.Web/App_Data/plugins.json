@@ -1,0 +1,24 @@
+﻿{
+  "InstalledPluginNames": [
+    "Obsolete field, using only for compatibility"
+  ],
+  "InstalledPlugins": [
+    {
+      "SystemName": "MultiFactorAuth.GoogleAuthenticator",
+      "Version": "1.14"
+    },
+    {
+      "SystemName": "Widgets.Test",
+      "Version": "1.76"
+    },
+    {
+      "SystemName": "Widgets.GoogleAnalytics",
+      "Version": "1.76"
+    }
+  ],
+  "PluginNamesToUninstall": [
+    "Widgets.Test"
+  ],
+  "PluginNamesToDelete": [],
+  "PluginNamesToInstall": []
+}
