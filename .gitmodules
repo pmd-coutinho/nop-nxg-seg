@@ -1,3 +1,3 @@
 [submodule "nopCommerce"]
-	path = nopCommerce
+	path = src/nopCommerce
 	url = https://github.com/nopSolutions/nopCommerce/tree/master
