@@ -64,7 +64,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Plugin.Misc.Zettle", "n
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NopCommerce", "NopCommerce", "{599E70AC-3F49-4ADD-8665-4442A633C9AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nxg.Web", "Nxg.Web\Nxg.Web.csproj", "{585D852F-8D2C-493C-A970-188E4949CF84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nxg.Web", "Presentation\Nxg.Web\Nxg.Web.csproj", "{585D852F-8D2C-493C-A970-188E4949CF84}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{5B9F9AC7-FC82-4B0E-B811-62E1518F0B4E}"
 EndProject
@@ -74,15 +74,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F79BEA50-7F47-443C-9A0E-05504922C34D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nxg.Web.Framework", "Nxg.Web.Framework\Nxg.Web.Framework.csproj", "{A3125AC1-84F2-45E0-B066-9939C33C20F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nxg.Web.Framework", "Presentation\Nxg.Web.Framework\Nxg.Web.Framework.csproj", "{A3125AC1-84F2-45E0-B066-9939C33C20F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nxg.Core", "Nxg.Core\Nxg.Core.csproj", "{B1CB6D8A-9583-4A32-A771-F881E1969F15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nxg.Core", "Libraries\Nxg.Core\Nxg.Core.csproj", "{B1CB6D8A-9583-4A32-A771-F881E1969F15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nxg.Data", "Nxg.Data\Nxg.Data.csproj", "{B53F092A-0A9D-4645-B97A-3DD99D0C141F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nxg.Data", "Libraries\Nxg.Data\Nxg.Data.csproj", "{B53F092A-0A9D-4645-B97A-3DD99D0C141F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nxg.Services", "Nxg.Services\Nxg.Services.csproj", "{4D2BFE5C-74E2-4F2F-A3AD-664B4D1950D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nxg.Services", "Libraries\Nxg.Services\Nxg.Services.csproj", "{4D2BFE5C-74E2-4F2F-A3AD-664B4D1950D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nxg.Plugin.Widgets.Test", "Nxg.Plugin.Widgets.Test\Nxg.Plugin.Widgets.Test.csproj", "{1562815D-FDF1-487D-BBF3-E52CCC5EACF3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nxg.Plugin.Widgets.Test", "Plugins\Nxg.Plugin.Widgets.Test\Nxg.Plugin.Widgets.Test.csproj", "{1562815D-FDF1-487D-BBF3-E52CCC5EACF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,7 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\nopCommerce\src\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
+      <ProjectReference Include="..\..\Libraries\Nxg.Core\Nxg.Core.csproj" />
+      <ProjectReference Include="..\..\nopCommerce\src\Presentation\Nop.Web.Framework\Nop.Web.Framework.csproj" />
     </ItemGroup>
 
 </Project>

@@ -9,7 +9,7 @@
         <PackageProjectUrl>https://www.nopcommerce.com/</PackageProjectUrl>
         <RepositoryUrl>https://github.com/nopSolutions/nopCommerce</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
-        <OutputPath>..\Nxg.Web\Plugins\Widgets.Test</OutputPath>
+        <OutputPath>..\..\Presentation\Nxg.Web\Plugins\Widgets.Test</OutputPath>
         <OutDir>$(OutputPath)</OutDir>
         <!--Set this parameter to true to get the dlls copied from the NuGet cache to the output of your project.
         You need to set this parameter to true if your plugin has a nuget package 
@@ -43,8 +43,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Nxg.Web\Nxg.Web.csproj" />
-        <ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\Build\ClearPluginAssemblies.proj" />
+        <ProjectReference Include="..\..\Presentation\Nxg.Web\Nxg.Web.csproj" />
+        <ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.proj" />
     </ItemGroup>
 
     <!-- This target execute after "Build" target -->

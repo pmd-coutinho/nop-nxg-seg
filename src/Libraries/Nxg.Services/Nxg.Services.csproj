@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\nopCommerce\src\Libraries\Nop.Services\Nop.Services.csproj" />
+      <ProjectReference Include="..\..\nopCommerce\src\Libraries\Nop.Services\Nop.Services.csproj" />
     </ItemGroup>
 
 </Project>

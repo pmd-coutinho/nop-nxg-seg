@@ -5,6 +5,7 @@ using Microsoft.Extensions.Hosting;
 using Nop.Core.Configuration;
 using Nop.Core.Infrastructure;
 using Nop.Web.Framework.Infrastructure.Extensions;
+using Nxg.Web.Framework.Infrastructure.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,5 +43,6 @@ var app = builder.Build();
 //configure the application HTTP request pipeline
 app.ConfigureRequestPipeline();
 app.StartEngine();
+app.StartNxgEngine();
 
 app.Run();

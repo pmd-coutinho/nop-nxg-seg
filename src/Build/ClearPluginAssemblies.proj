@@ -10,7 +10,7 @@
     <RepositoryUrl>https://github.com/nopSolutions/nopCommerce</RepositoryUrl> 
     <RepositoryType>Git</RepositoryType>
 
-    <OutputPath>$(MSBuildProjectDirectory)\..\Nxg.Web\bin\$(Configuration)</OutputPath>
+    <OutputPath>$(MSBuildProjectDirectory)\..\Presentation\Nxg.Web\bin\$(Configuration)</OutputPath>
   </PropertyGroup> 
 
   <Target Name="NopClear">

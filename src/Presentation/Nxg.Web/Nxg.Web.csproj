@@ -12,17 +12,17 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\nopCommerce\src\Presentation\Nop.Web\Nop.Web.csproj" />
-        <ProjectReference Include="..\Nxg.Core\Nxg.Core.csproj" />
-        <ProjectReference Include="..\Nxg.Data\Nxg.Data.csproj" />
-        <ProjectReference Include="..\Nxg.Services\Nxg.Services.csproj" />
-        <ProjectReference Include="..\Nxg.Web.Framework\Nxg.Web.Framework.csproj" />
+        <ProjectReference Include="..\..\nopCommerce\src\Presentation\Nop.Web\Nop.Web.csproj" />
+        <ProjectReference Include="..\..\Libraries\Nxg.Core\Nxg.Core.csproj" />
+        <ProjectReference Include="..\..\Libraries\Nxg.Data\Nxg.Data.csproj" />
+        <ProjectReference Include="..\..\Libraries\Nxg.Services\Nxg.Services.csproj" />
+        <ProjectReference Include="..\..\Presentation\Nxg.Web.Framework\Nxg.Web.Framework.csproj" />
     </ItemGroup>
 
     <Target Name="CopyFiles" BeforeTargets="PrepareForBuild">
         <ItemGroup>
-            <StaticFiles Include="..\nopCommerce\src\Presentation\Nop.Web\wwwroot\**\*.*" />
-            <Themes Include="..\nopCommerce\src\Presentation\Nop.Web\Themes\**\*.*" />
+            <StaticFiles Include="..\..\nopCommerce\src\Presentation\Nop.Web\wwwroot\**\*.*" />
+            <Themes Include="..\..\nopCommerce\src\Presentation\Nop.Web\Themes\**\*.*" />
         </ItemGroup>
         <Copy SourceFiles="@(StaticFiles)" DestinationFolder="wwwroot\%(RecursiveDir)" />
         <Copy SourceFiles="@(Themes)" DestinationFolder="Themes\%(RecursiveDir)" />
@@ -30,7 +30,7 @@
     
     <Target Name="CopyPlugins" AfterTargets="Build">
         <ItemGroup>
-            <Plugins Include="..\nopCommerce\src\Presentation\Nop.Web\Plugins\**" />
+            <Plugins Include="..\..\nopCommerce\src\Presentation\Nop.Web\Plugins\**" />
         </ItemGroup>
         <Copy SourceFiles="@(Plugins)" DestinationFolder="Plugins\%(RecursiveDir)" />
     </Target>
@@ -75,6 +75,53 @@
       <Folder Include="Views\Nxg\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Checkout\ShippingAddress.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Checkout\_PrivacyPolicy.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Checkout\_TermsAndConditions.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\HomeFindMe\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Menu\_CategorySliderSettings.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Order\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Product\ProductTemplate.SimpleNxg.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Product\_ProductAttributes.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Product\_ProductAttributesRadioLayout.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Product\_TotalPricesNxg.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\Components\AllergensModal\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\Components\CrossSellProducts\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\Components\Footer\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\Components\HeaderLinks\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\Components\MiniCartNxg\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\Components\OrderSummaryNxg\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\Components\ReviewOrderMobileNxg\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\Components\TopicBlock\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\Components\TopMenu\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\_ClickAndCollectIcon.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\_ClickAndCollectIconBlack.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\_GoogleAutocompleteConfig.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\_GroupOrderingModals.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\_Header.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\_MapsLocationScript.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\_ModalLocationNotFound.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\_Notifications.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\_OrderItems.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\Shared\_ProductBox.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\StoreSelection\_DeliveryAndMarketplaces.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\StoreSelection\_SearchFieldOnList.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\StoreSelection\_SearchFieldOnMap.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\Views\_ViewImports.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\WagamamaUK\theme.json" />
+      <_ContentIncludedByDefault Remove="Themes\FiveGuysFR\Views\Shared\Components\Footer\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\FiveGuysFR\Views\Shared\Components\TopicBlock\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\FiveGuysFR\Views\Shared\Components\TopMenu\Default.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\FiveGuysFR\Views\HomeFindMe\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\FiveGuysFR\Views\Order\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\FiveGuysFR\Views\OrderNxg\AccountOrderDetails.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\FiveGuysFR\Views\Product\ProductTemplate.SimpleNxg.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\FiveGuysFR\Views\Product\_ProductAttributes.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\FiveGuysFR\Views\Product\_ProductAttributesCheckboxLayout.cshtml" />
+      <_ContentIncludedByDefault Remove="Themes\FiveGuysFR\Views\Product\_ProductAttributesRadioLayout.cshtml" />
+    </ItemGroup>
+
     <!-- This target execute after "Build" target.
       We use it to clean up folder with plugins from unnecessary and obsolete libraries. -->
     <Target Name="NopTarget" AfterTargets="Build">
@@ -85,14 +132,14 @@
             <NxgPluginsFolders Include="@(NxgPluginsDescription->'%(relativedir)')" />
 
             <!-- Get plugin description files to get plugin paths -->
-            <CorePluginsDescription Include="$(MSBuildProjectDirectory)\..\nopCommerce\src\Presentation\Nop.Web\Plugins\**\plugin.json;" />
+            <CorePluginsDescription Include="$(MSBuildProjectDirectory)\..\..\nopCommerce\src\Presentation\Nop.Web\Plugins\**\plugin.json;" />
             <!-- Get paths for all plugins -->
             <CorePluginsFolders Include="@(CorePluginsDescription->'%(relativedir)')" />
 
             <!-- Get paths for ClearPluginAssemblies project -->
-            <NxgClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\Build\ClearPluginAssemblies.proj" />
+            <NxgClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.proj" />
             <!-- Get paths for ClearPluginAssemblies project -->
-            <CoreClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\nopCommerce\src\Build\ClearPluginAssemblies.proj" />
+            <CoreClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\nopCommerce\src\Build\ClearPluginAssemblies.proj" />
 
         </ItemGroup>
         <PropertyGroup>
