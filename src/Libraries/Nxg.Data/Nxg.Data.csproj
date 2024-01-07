@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\nopCommerce\src\Libraries\Nop.Data\Nop.Data.csproj" />
+      <ProjectReference Include="..\Nxg.Core\Nxg.Core.csproj" />
     </ItemGroup>
 
 </Project>
